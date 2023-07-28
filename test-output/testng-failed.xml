@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Projects.AddProjectTest">
+      <class name="ResponseBodyValidate.HeaderValidationTest">
         <methods>
-          <include name="logoutFromApp"/>
-          <include name="closeBrowser"/>
-          <include name="createProject"/>
-          <include name="dBClose"/>
-          <include name="LoginToApp"/>
-          <include name="launchBrowser"/>
-          <include name="DbCongig"/>
+          <include name="headerValidation"/>
         </methods>
-      </class> <!-- Projects.AddProjectTest -->
+      </class> <!-- ResponseBodyValidate.HeaderValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

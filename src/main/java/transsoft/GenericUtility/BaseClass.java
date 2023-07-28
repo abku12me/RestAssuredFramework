@@ -16,6 +16,8 @@ import transsoft.ObjectRepository.LoginPage;
 import static io.restassured.RestAssured.*;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
 /**
  * This class consists of basic config annotation of testng
  * @author mishr
@@ -28,13 +30,17 @@ public class BaseClass {
 	public WebDriverUtilities wutil=new WebDriverUtilities();
 	public ExcelsheetUtilities eutil=new ExcelsheetUtilities();
 	public JavaUtility jutil=new JavaUtility();
+	public DataBaseUtilities dutil=new DataBaseUtilities();
+	public Connection con=null;
 	
 	public WebDriver driver=null;
 	//public static WebDriver ListenerDriver;
 	
 	@BeforeSuite
-	public void DbCongig()
+	public void DbCongig() throws SQLException
 	{
+		//dutil.dBconnection();
+		
 		System.out.println("database connection successfully");
 	}
 	
